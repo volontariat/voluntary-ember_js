@@ -1,0 +1,1 @@
+VoluntaryOnEmberjs.ApplicationController = Ember.Controller.extend()

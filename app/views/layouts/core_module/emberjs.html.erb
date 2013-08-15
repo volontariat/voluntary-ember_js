@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= t('layout.title') %></title>
+  <meta charset='utf-8'>
+  <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= javascript_include_tag 'voluntary_core_module_emberjs/external/preload_store' %>
+  <%= stylesheet_link_tag *voluntary_core_module_emberjs_stylesheets, media: 'all' %>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet"/>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <%= yield %>
+  
+  <%- if @preloaded.present? %>
+    <script>
+    <%- @preloaded.each do |key, json| %>
+      PreloadStore.store('<%= key %>',<%= raw json %>);
+    <% end %>
+    </script>
+  <%- end %>
+  
+  <%= javascript_include_tag *voluntary_core_module_emberjs_javascripts %>
+  
+  <%= javascript_tag do %>
+    <%= yield :top_javascript %>
+    
+    $(function() {
+      <%= yield(:document_ready) %>
+    });
+  <% end %>
+</body>
+</html>
