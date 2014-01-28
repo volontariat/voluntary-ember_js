@@ -16,8 +16,12 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
   s.add_dependency 'voluntary', '0.1.0.rc2' 
+  
+  #s.add_dependency 'ember-rails'
+  #s.add_dependency 'ember-source', '1.0.0.rc6.4'
   s.add_dependency 'ember-rails'
-  s.add_dependency 'ember-source', '1.0.0.rc6.4'
+  s.add_dependency 'ember-source', '~> 1.4.0.beta.3'
+  
   s.add_dependency 'active_model_serializers'#, github: 'rails-api/active_model_serializers'
   
   # :development, :test
