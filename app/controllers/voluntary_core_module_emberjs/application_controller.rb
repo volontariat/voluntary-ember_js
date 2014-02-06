@@ -31,13 +31,10 @@ class VoluntaryCoreModuleEmberjs::ApplicationController < ApplicationController
   def set_permanent_cookie!(user)
     cookies.permanent["_t"] = { value: user.auth_token, httponly: true }
   end
-  
+
+=begin  
   def current_user
     return @current_user if @current_user# || @not_logged_in
-
-    @current_user = User.first
-    
-    return @current_user
 
     if session[:current_user_id].blank?
       # maybe we have a cookie?
@@ -62,6 +59,7 @@ class VoluntaryCoreModuleEmberjs::ApplicationController < ApplicationController
 
     @current_user
   end
+=end
   
   def api_key_valid?
     raise NotImplementedError
