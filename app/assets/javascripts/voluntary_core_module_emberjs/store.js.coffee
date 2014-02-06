@@ -1,3 +1,7 @@
-VoluntaryOnEmberjs.Store = DS.Store.extend
-  revision: 13
-  adapter: DS.RESTAdapter.create(namespace: 'api/v1')
+VoluntaryOnEmberjs.ApplicationSerializer = DS.ActiveModelSerializer.extend()
+
+VoluntaryOnEmberjs.ApplicationAdapter = DS.RESTAdapter.extend
+  namespace: 'api/v1',
+  pathForType: (type) ->
+    underscored = Ember.String.underscore(type)
+    Ember.String.pluralize underscored
