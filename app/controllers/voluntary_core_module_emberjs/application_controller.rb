@@ -1,7 +1,17 @@
 class VoluntaryCoreModuleEmberjs::ApplicationController < ApplicationController
   before_filter :preload_json
   
+  helper_method :voluntary_core_module_emberjs_stylesheets, :voluntary_core_module_emberjs_javascripts
+  
   protected
+  
+  def voluntary_core_module_emberjs_stylesheets
+    ['voluntary_core_module_emberjs/application']
+  end
+  
+  def voluntary_core_module_emberjs_javascripts
+    ['voluntary_core_module_emberjs/application']
+  end
   
   def render_json_error(obj)
     errors = obj.respond_to?(:errors) ? obj.errors.full_messages : obj
