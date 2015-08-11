@@ -7,20 +7,19 @@ require "voluntary_core_module_emberjs/version"
 Gem::Specification.new do |s|
   s.name        = "voluntary_core_module_emberjs"
   s.version     = VoluntaryCoreModuleEmberjs::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of VoluntaryCoreModuleEmberjs."
-  s.description = "TODO: Description of VoluntaryCoreModuleEmberjs."
+  s.authors     = ['Mathias Gawlista']
+  s.email       = ['gawlista@gmail.com']
+  s.homepage    = 'http://Volontari.at'
+  s.summary     = 'Ember.js support for crowdsourcing management system gem voluntary'
+  s.description = 'plugin for crowdsourcing management system voluntary: bit.ly/vcme-0-0-1'
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
-  s.add_dependency 'voluntary', '0.1.0.rc2' 
+  s.add_dependency 'voluntary', '~> 0.4.0'
   
-  s.add_dependency 'ember-rails'
-  #s.add_dependency 'ember-source', '~> 1.4.0.beta.3'
-  s.add_dependency 'ember-source'
-  s.add_dependency 'ember-data-source', '1.0.0.beta.6'
+  s.add_dependency 'ember-rails', '0.15.0'
+  s.add_dependency 'ember-source', '1.7.0'
+  s.add_dependency 'ember-data-source', '1.0.0.beta.10'#, '1.0.0.beta.6'
   s.add_dependency 'active_model_serializers'#, github: 'rails-api/active_model_serializers'
   
   # group :development
@@ -41,7 +40,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'timecop', '~> 0.6.1'
   s.add_development_dependency 'factory_girl_rails', '~> 1.7.0'
   s.add_development_dependency 'fixture_builder', '~> 0.3.3'
-  s.add_development_dependency 'fuubar', '~> 1.1.0'
   s.add_development_dependency 'selenium-webdriver', '~> 2.22.1'
   s.add_development_dependency 'spork', '~> 1.0rc2'
   s.add_development_dependency 'guard-rspec', '~> 3.0.2'
