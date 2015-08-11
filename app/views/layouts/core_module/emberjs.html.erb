@@ -11,8 +11,41 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= yield %>
-  
+  <div id="wrap">
+    <div id="outlet">
+    </div>
+    <%= yield %>
+    <div id="push"></div>
+  </div>
+  <div id="footer">
+    <div class="container">
+      <p class="muted credit">
+        <!--
+        <span>
+          <%= raw t(
+            'general.footer.credits.twitter_bootstrap', 
+            mdo: link_to('@mdo', 'http://Twitter.com/mdo'), fat: link_to('@fat', 'http://Twitter.com/fat'), 
+          ) %> 
+        </span>
+        <br/>
+        <span>
+          <%= t('general.footer.credits.sticky_footer') %> <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.
+        </span>
+        <br/>
+        -->
+        <%= footer_navigation %>
+        <br/>
+        <span>
+          <%= raw t('general.footer.credits.voluntary', link: link_to('Voluntary.Software', 'http://Voluntary.Software')) %>.
+        </span>
+        <br/>
+        <span>
+          <%= raw t('general.footer.license', link: link_to('MIT', 'https://github.com/volontariat/voluntary/blob/master/MIT-LICENSE')) %>.
+        </span>
+        <br/>
+      </p>
+    </div>
+  </div>
   <%- if @preloaded.present? %>
     <script>
     <%- @preloaded.each do |key, json| %>
@@ -21,8 +54,11 @@
     </script>
   <%- end %>
   
+  <!--
+    # TODO: don't override voluntary_core_module_emberjs' emberjs.html.erb and override ApplicationHelper instead
+    #= javascript_include_tag *voluntary_core_module_emberjs_javascripts %>
+  -->
   <%= javascript_include_tag *voluntary_core_module_emberjs_javascripts %>
-  
   <%= javascript_tag do %>
     <%= yield :top_javascript %>
     
