@@ -1,0 +1,1 @@
+Volontariat.ApplicationSerializer = DS.ActiveModelSerializer.extend()
