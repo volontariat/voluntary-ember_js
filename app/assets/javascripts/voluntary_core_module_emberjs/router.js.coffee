@@ -1,5 +1,5 @@
-VoluntaryOnEmberjs.Router.map ->
+Volontariat.Router.map ->
   @resource 'users'
         
-VoluntaryOnEmberjs.Router.reopen
+Volontariat.Router.reopen
   location: 'hash'

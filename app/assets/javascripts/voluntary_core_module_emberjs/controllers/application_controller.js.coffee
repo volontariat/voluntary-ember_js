@@ -1,1 +1,1 @@
-VoluntaryOnEmberjs.ApplicationController = Ember.Controller.extend()
+Volontariat.ApplicationController = Ember.Controller.extend()

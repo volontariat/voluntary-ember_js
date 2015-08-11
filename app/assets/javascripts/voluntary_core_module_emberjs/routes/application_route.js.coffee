@@ -1,1 +1,1 @@
-VoluntaryOnEmberjs.ApplicationRoute = Ember.Route.extend()
+Volontariat.ApplicationRoute = Ember.Route.extend()

@@ -1,2 +1,2 @@
-VoluntaryOnEmberjs.ApplicationView = Ember.View.extend
-  currentUserBinding: 'VoluntaryOnEmberjs.currentUser'
+Volontariat.ApplicationView = Ember.View.extend
+  currentUserBinding: 'Volontariat.currentUser'

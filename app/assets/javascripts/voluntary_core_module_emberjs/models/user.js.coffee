@@ -1,3 +1,3 @@
-VoluntaryOnEmberjs.User = DS.Model.extend
+Volontariat.User = DS.Model.extend
   name: DS.attr('string'),
   email: DS.attr('string')
