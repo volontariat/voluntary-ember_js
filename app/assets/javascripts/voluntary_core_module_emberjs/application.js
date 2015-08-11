@@ -5,4 +5,4 @@
 //= require_self
 //= require ./app
 
-VoluntaryOnEmberjs = Ember.Application.create({ LOG_TRANSITIONS: true });
+Volontariat = Ember.Application.create({ LOG_TRANSITIONS: true, rootElement: '#outlet' });
