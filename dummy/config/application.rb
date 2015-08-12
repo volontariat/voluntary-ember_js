@@ -9,7 +9,7 @@ require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
 Bundler.require(*Rails.groups)
-require "voluntary_core_module_emberjs"
+require "voluntary/ember_js"
 
 module Dummy
   class Application < Rails::Application

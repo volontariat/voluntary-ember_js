@@ -1,17 +1,17 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "voluntary_core_module_emberjs/version"
+require "voluntary/ember_js/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "voluntary_core_module_emberjs"
-  s.version     = VoluntaryCoreModuleEmberjs::VERSION
+  s.name        = "voluntary-ember_js"
+  s.version     = Voluntary::EmberJs::VERSION
   s.authors     = ['Mathias Gawlista']
   s.email       = ['gawlista@gmail.com']
   s.homepage    = 'http://Volontari.at'
-  s.summary     = 'Ember.js support for crowdsourcing management system gem voluntary'
-  s.description = 'plugin for crowdsourcing management system voluntary: bit.ly/vcme-0-0-1'
+  s.summary     = 'Ember.js support for crowdsourcing management system gem voluntary.'
+  s.description = 'plugin for crowdsourcing management system voluntary: bit.ly/vej-0-0-1'
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
