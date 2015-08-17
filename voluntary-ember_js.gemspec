@@ -12,8 +12,9 @@ Gem::Specification.new do |s|
   s.homepage    = 'http://Volontari.at'
   s.summary     = 'Ember.js support for crowdsourcing management system gem voluntary.'
   s.description = 'Ember.js support for #crowdsourcing management system voluntary: bit.ly/vej-0-0-1'
-
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.license     = 'MIT'
+  
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency 'voluntary', '~> 0.5.0'
   
