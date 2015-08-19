@@ -1,4 +1,4 @@
-Volontariat.ApplicationController = Ember.Controller.extend
+Volontariat.ApplicationController = Ember.Controller.extend(Volontariat.HasCurrentUser,
  
   actions:
     
@@ -8,3 +8,4 @@ Volontariat.ApplicationController = Ember.Controller.extend
       ).fail((data) ->
         alert 'Signing out failed!'
       )
+)
