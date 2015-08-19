@@ -21,7 +21,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'ember-rails', '~> 0.19.0'#'0.15.0'
   s.add_dependency 'ember-source', '1.13.8'#'1.8.0'#'1.13.8' #'1.7.0'
   s.add_dependency 'ember-data-source', '1.13.8'#'1.0.0.beta.10'#, '1.0.0.beta.6'
-  s.add_dependency 'active_model_serializers', '~> 0.9.3'#, github: 'rails-api/active_model_serializers'
   
   # group :development
   s.add_development_dependency 'letter_opener', '~> 1.0.0'
