@@ -13,3 +13,14 @@
 Ember.TextField.reopen attributeBindings: [
   'data-autocomplete', 'data-append-autocomplete', 'data-append-to'
 ]
+
+Volontariat.alert = (type, message) ->
+  $('#alert_message').text message
+  $('#alert').addClass "alert-#{type}"
+  $("#alert").slideDown()
+  
+  setTimeout (->
+    $("#alert").slideUp(400, ->
+      $('#alert').removeClass "alert-#{type}"
+    )
+  ), 5000
