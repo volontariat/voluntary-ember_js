@@ -59,6 +59,10 @@
     #= javascript_include_tag *voluntary_ember_js_javascripts %>
   -->
   <%= javascript_include_tag *voluntary_ember_js_javascripts %>
+  <script type="text/javascript">
+    Volontariat.locale = '<%= I18n.locale.to_s %>';
+    Volontariat.translations = <%= I18n.backend.send(:translations)[I18n.locale].to_json.html_safe %>;  
+  </script>
   <%= javascript_tag do %>
     <%= yield :top_javascript %>
     
