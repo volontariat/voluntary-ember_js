@@ -13,10 +13,7 @@ Volontariat.ApplicationRoute = Ember.Route.extend
       else
         alert "Something went wrong: HTTP status code #{error.status}!"
     
-      if error.status == undefined
-        return true
-      else
-        @transitionTo('index')
-    
+      return true if error.status == undefined
+        
   renderTemplate: ->
     @render 'application'
