@@ -4,7 +4,6 @@ Ember.Handlebars.helper 't', (key, no_html, options) ->
   
   unless text == undefined || typeof(text) == 'string'
     $.each keyArray, (index, value) ->
-      console.log value
       if text[value] == undefined
         text = undefined
         
