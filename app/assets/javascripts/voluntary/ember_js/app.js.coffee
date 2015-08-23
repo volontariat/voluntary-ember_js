@@ -25,3 +25,7 @@ Volontariat.alert = (type, message) ->
       $('#alert').removeClass "alert-#{type}"
     )
   ), 5000
+  
+Volontariat.reload_alert = (message) ->
+  $('#reload_alert_message').text message
+  $('#reload_alert').slideDown()
