@@ -1,0 +1,12 @@
+{{#if liked}}
+<a {{action 'unlike'}}><span class="glyphicon glyphicon-thumbs-up"></span> {{t 'likes.actions.undo_like'}}</a>
+{{else}}
+<a {{action 'like'}}><span class="glyphicon glyphicon-thumbs-up"></span> {{t 'likes.actions.like'}}</a>
+{{/if}}
+{{likesCount}}
+{{#if disliked}}
+<a {{action 'undoDislike'}}><span class="glyphicon glyphicon-thumbs-down"></span> {{t 'likes.actions.undo_dislike'}}</a>
+{{else}}
+<a {{action 'dislike'}}><span class="glyphicon glyphicon-thumbs-down"></span> {{t 'likes.actions.dislike'}}</a>
+{{/if}}
+{{dislikesCount}}
