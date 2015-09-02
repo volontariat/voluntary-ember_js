@@ -1,5 +1,9 @@
 ## unreleased ##
 
+## 0.0.3 (September 2, 2015) ##
+
+* Implements formatted datetime helper in Ember.JS.
+
 ## 0.0.2 (August 23, 2015) ##
 
 * [#8](https://github.com/volontariat/voluntary-ember_js/issues/8) Implements like or dislike component.
