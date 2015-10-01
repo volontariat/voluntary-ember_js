@@ -1,0 +1,5 @@
+<script type="text/javascript">
+  Volontariat.locale = '<%= I18n.locale.to_s %>';
+  moment.locale('<%= I18n.locale.to_s %>');
+  Volontariat.translations = <%= I18n.backend.send(:translations)[I18n.locale].to_json.html_safe %>;  
+</script>
