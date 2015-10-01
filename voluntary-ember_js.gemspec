@@ -11,12 +11,12 @@ Gem::Specification.new do |s|
   s.email       = ['gawlista@gmail.com']
   s.homepage    = 'http://Volontari.at'
   s.summary     = 'Ember.js support for crowdsourcing management system gem voluntary.'
-  s.description = 'Ember.js support for #crowdsourcing management system voluntary: bit.ly/vej-0-0-3'
+  s.description = 'Ember.js support for #crowdsourcing management system voluntary: bit.ly/vej-0-0-4'
   s.license     = 'MIT'
   
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency 'voluntary', '~> 0.5.0'
+  s.add_dependency 'voluntary', '~> 0.5'
   
   s.add_dependency 'ember-rails', '~> 0.19.0'#'0.15.0'
   s.add_dependency 'ember-source', '1.13.8'#'1.8.0'#'1.13.8' #'1.7.0'

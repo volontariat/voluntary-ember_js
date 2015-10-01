@@ -1,5 +1,9 @@
 ## unreleased ##
 
+## 0.0.4 (September 2, 2015) ##
+
+* Opens voluntary gem version to >= 0.5 and <= 1.0.
+
 ## 0.0.3 (September 2, 2015) ##
 
 * Implements formatted datetime helper in Ember.JS.
