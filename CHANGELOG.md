@@ -1,7 +1,9 @@
 ## unreleased ##
 
-* [#4](https://github.com/volontariat/voluntary-ember_js/issues/4) Ember.js 2.0 upgrade
+## 0.1.0 (November 9, 2015) ##
 
+* [#4](https://github.com/volontariat/voluntary-ember_js/issues/4) Ember.js 2.0 upgrade
+ 
 ## 0.0.4 (September 2, 2015) ##
 
 * Opens voluntary gem version to >= 0.5 and <= 1.0.
