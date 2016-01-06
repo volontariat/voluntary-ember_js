@@ -19,8 +19,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'voluntary', '~> 0.5'
   
   s.add_dependency 'ember-rails', '~> 0.19.0'#'0.15.0'
-  s.add_dependency 'ember-source', '~> 2.0.2'#'~> 1.13.10'
-  s.add_dependency 'ember-data-source', '~> 2.0.1'#'1.13.8'
+  s.add_dependency 'ember-source', '~> 2.2.0'#'~> 2.0.2'
+  s.add_dependency 'ember-data-source', '~> 2.2.1'#'~> 2.0.1'
   
   # group :development
   s.add_development_dependency 'letter_opener', '~> 1.0.0'
